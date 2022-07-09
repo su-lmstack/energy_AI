@@ -122,8 +122,8 @@ class Dataset:
         # 1. delta_Q_100_10(V)
         minimum_dQ_100_10 = np.zeros(n_cells)
         variance_dQ_100_10 = np.zeros(n_cells)
-        skewness_dQ_100_10 = np.zeros(n_cells)
-        kurtosis_dQ_100_10 = np.zeros(n_cells)
+        skewness_dQ_100_10 = np.zeros(n_cells) # 偏度
+        kurtosis_dQ_100_10 = np.zeros(n_cells) # 峰度
 
         dQ_100_10_2 = np.zeros(n_cells)
         # 2. Discharge capacity fade curve features

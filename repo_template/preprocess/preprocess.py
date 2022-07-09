@@ -67,9 +67,11 @@ class Preprocess:
                 t = np.hstack((f[cycles['t'][j, 0]].value))
                 cd = {'I': I, 'Qc': Qc, 'Qd': Qd, 'Qdlin': Qdlin, 'T': T, 'Tdlin': Tdlin, 'V': V, 'dQdV': dQdV, 't': t}
                 cycle_dict[str(j)] = cd
+                break
             cell_dict = {'cycle_life': cl, 'charge_policy': policy, 'summary': summary, 'cycles': cycle_dict}
             key = 'b1c' + str(i)
             bat_dict[key] = cell_dict
+            break
 
         bat_dict1 = bat_dict
 
@@ -107,10 +109,12 @@ class Preprocess:
                 t = np.hstack((f[cycles['t'][j, 0]].value))
                 cd = {'I': I, 'Qc': Qc, 'Qd': Qd, 'Qdlin': Qdlin, 'T': T, 'Tdlin': Tdlin, 'V': V, 'dQdV': dQdV, 't': t}
                 cycle_dict[str(j)] = cd
+                break
 
             cell_dict = {'cycle_life': cl, 'charge_policy': policy, 'summary': summary, 'cycles': cycle_dict}
             key = 'b2c' + str(i)
             bat_dict[key] = cell_dict
+            break
 
         bat_dict2 = bat_dict
 
@@ -148,10 +152,13 @@ class Preprocess:
                 t = np.hstack((f[cycles['t'][j, 0]].value))
                 cd = {'I': I, 'Qc': Qc, 'Qd': Qd, 'Qdlin': Qdlin, 'T': T, 'Tdlin': Tdlin, 'V': V, 'dQdV': dQdV, 't': t}
                 cycle_dict[str(j)] = cd
+                break
+            
 
             cell_dict = {'cycle_life': cl, 'charge_policy': policy, 'summary': summary, 'cycles': cycle_dict}
             key = 'b3c' + str(i)
             bat_dict[key] = cell_dict
+            break
 
         bat_dict3 = bat_dict
 
